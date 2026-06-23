@@ -18,9 +18,9 @@ Windows PowerShell script that backs up files into zip archives.
   - ⁠.crdownload - Incomplete Chrome downloads
   - .lock
   - .lnk - Windows Shortcuts, broken links will crash this script
-  - .pst & *.ost - Outlook files and archives
+  - .pst & .ost - Outlook files and archives
   - .laccdb - Locked Access Database, this is only while it in use
-  - .tmp & *.temp - Temporary files, possibly incomplete
+  - .tmp & .temp - Temporary files, possibly incomplete
   - \node_modules - A class of Windows folders with specific functions and not normally used by the user
   - \temp & \cache - Temporary files, possibly incomplete
 
