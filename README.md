@@ -32,5 +32,12 @@ Windows PowerShell script that backs up files into zip archives.
 5. Run the script with the command `.\backup.ps1`
    - If the script is interrupted, just repeat steps from #3.
 ## Extracting Large(>4GB) zip archives
-This is a known limitation in Windows File Explorer. It uses a 32bit zip tool, while the zipped archive is using 64bit encoding. To extract the files, execute this command in PowerShell:
-```[System.IO.Compression.ZipFile]::ExtractToDirectory(ZipPath, ExtractPath)```
+This is a known limitation in Windows File Explorer. It uses a 32bit zip tool, while the zipped archive is using 64bit encoding. To extract the files:
+1. Download the **extract.ps1** file.
+2. Execute this command in PowerShell:
+   
+```.\extract.ps1 -ZipPath "c:\path\to\file.zip" -ExtractPath "c:\path\to\extracted"```
+
+or
+
+```.\extract.ps1 "c:\path\to\file.zip" "c:\path\to\extracted"```
